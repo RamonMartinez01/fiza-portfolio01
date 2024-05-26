@@ -10,21 +10,25 @@ const ServicesUnits = () => {
         const servicesData = [
 
             {
-                "name": "Web Design",
-                className: "web-design"
+                "name": "SEO",
+                className: "seo",
+                "description": "This is a description about the service you are ofering. It can be as long as you want."
             },
             {
-                "name": "Branding",
-                className: "branding"
+                "name": "Guest Posting",
+                className: "posting",
+                "description": "This is a description about the service you are ofering. It can be as long as you want."
             },
             {
-                "name": "Product Strategy",
-                className: "product-strategy"
+                "name": "Brand Marketing",
+                className: "Marketing",
+                "description": "This is a description about the service you are ofering. It can be as long as you want."
 
             },
             {
-                "name": "App Developing",
-                className: "app-developing"
+                "name": "Content Writing",
+                className: "content-writing",
+                "description": "This is a description about the service you are ofering. It can be as long as you want."
             },
 
         ];
@@ -39,13 +43,17 @@ const ServicesUnits = () => {
             </div>
             <div className="services__map">
                 {services.map((service, index) => (
-                    <div className="services__card" key={index}>
+                    <div className={`services__card ${service.className}`} key={index}>
                         <div className="services__card-header">
                             <div className={`img__container ${service.className}`}> </div>
                         </div>
                         <div className="services__card-name">
                             <h2>{service.name}</h2>
                             <hr className="card__name-hr"/>
+                        </div>
+                        <div className="services__description">
+                            <span>{service.description}
+                            </span>
                         </div>
                     </div>
                 ))}

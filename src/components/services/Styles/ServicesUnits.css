@@ -44,6 +44,7 @@
     height: 80%;
 }
 .services__card {
+    position: relative;
     background-color:  #c8d9df40;
     display: flex;
     flex-direction: column;
@@ -51,7 +52,35 @@
     min-height: 16em;
     min-width: 22em;
     cursor: pointer;
+    transition: background-image 2s ease, transform 0.3s;
 }
+.services__card:hover {
+    transform: translateY(-5px);
+    background-color:  none;
+}
+.services__card:hover .services__card-name {
+    display: none;
+}
+.services__card.seo:hover {
+    background-image: url('/fiza-seo-service.jpg'); 
+    background-size: cover;
+    transform: ease 1s;
+}
+.services__card.posting:hover {
+    background-image: url('/fiza-building-guide.png'); 
+    background-size: cover;
+    transform: ease 1s;
+}
+.services__card.Marketing:hover {
+    background-image: url('/fiza-wdev-service.jpg'); 
+    background-size: cover;
+    transform: ease 1s;
+} 
+.services__card.content-writing:hover {
+    background-image: url('/fiza-content-marketing-writers-service.jpg'); 
+    background-size: cover;
+    transform: ease 1s;
+} 
 .services__card-header {
     display: flex;
     align-items: center;
@@ -68,21 +97,7 @@
     display: none;
 }
 
-.img__container.web-design {
-    background-image: url('/fizu-gift01.png');
-}
 
-.img__container.branding {
-    background-image: url('/fizu-service01.png');
-}
-
-.img__container.product-strategy {
-    background-image: url('/img-services04.png'); 
-}
-
-.img__container.app-developing {
-    background-image: url('/fizu-service05.png'); 
-}
 .services__card-name {
     display: flex;
     flex-direction: column;
@@ -95,3 +110,28 @@
 .services__card-name hr {
     width: 55%;
 }
+
+/*-- SERVICES__DESCRIPTION --*/
+.services__description {
+    background-color:  #06739a;
+    display: none;
+    opacity: 0;
+    color: rgb(255, 213, 0);
+    position: absolute;
+    width: inherit;
+    z-index: 4;
+    bottom: -0.2;
+    height: auto;
+    padding: 1em;
+    transition: opacity 0.5s ease, bottom 3s ease;
+}
+.services__description span {
+    font-family: "noto sans";
+    font-size: 1.2rem;
+} 
+.services__card:hover .services__description {
+    display: block;
+    opacity: 1;
+    bottom: -7em; /* Adjust to move it slightly more out of the bottom on hover */
+
+}   

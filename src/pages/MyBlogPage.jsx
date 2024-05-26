@@ -11,7 +11,7 @@ const MyBlogPage = () => {
         </div>
       </section>
       <section className="blog__body">
-          <div className='blog__card'>
+          <a href='https://sites.google.com/view/fizahome/home' target='_blank' className='blog__card'>
             <div className='card-header'>
               <span className='header__info-01'></span>
             </div>
@@ -28,8 +28,8 @@ const MyBlogPage = () => {
                 </p>
               </div>
             </div>
-          </div>
-          <div className='blog__card'>
+          </a>
+          <a href='https://sites.google.com/view/fizahome/home' target='_blank' className='blog__card'>
             <div className='card-header'>
               <span className='header__info-02'></span>
             </div>
@@ -46,8 +46,8 @@ const MyBlogPage = () => {
                 </p>
               </div>
             </div>
-          </div>
-          <div className='blog__card'>
+          </a>
+          <a href='https://sites.google.com/view/fizahome/home' target='_blank' className='blog__card'>
             <div className='card-header'>
               <span className='header__info-03'></span>
             </div>
@@ -64,7 +64,7 @@ const MyBlogPage = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </a>
       </section>
     </article>
   )

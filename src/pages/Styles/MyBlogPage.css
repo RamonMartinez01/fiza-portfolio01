@@ -61,7 +61,9 @@
     max-width: 22em;
     min-width: 22em;
     height: 28em;
+    text-decoration: none;
 }
+
 
 .blog__card:hover {
     transform: translateY(-10px);
