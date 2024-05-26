@@ -24,7 +24,7 @@ const MyBlogPage = () => {
               </div>
               <div className='card__textbite'>
                 <p>
-                Suspendisse et nunc at nunc hendrerit consequat. Maecenas leo felis, fermentum nec venenatis et, malesuada vitae urna
+                The University of Manchester has recently launched a new social responsibility and civic engagement 
                 </p>
               </div>
             </div>
