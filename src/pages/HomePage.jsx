@@ -55,7 +55,9 @@ const HomePage = ({ refs }) => {
         </div>
       </div>
       <div ref={refs.blogRef} className="sections">
-        <MyBlogPage />
+        <div className="blog__section">
+          <MyBlogPage />
+        </div>
       </div>
       <div ref={refs.contactRef} className="sections">
         <ContactPage />

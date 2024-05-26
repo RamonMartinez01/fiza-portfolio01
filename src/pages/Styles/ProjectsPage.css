@@ -11,9 +11,11 @@
 }
 .projects__header {
     background-color: blueviolet;
+    width: 100%;
+    height: 25%;
 }
 
-.projects_header-title {
+.projects__header-title {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -21,7 +23,7 @@
     margin-bottom: 1.5em;
     font-family: "noto sans";
     width: 100%;
-    background-color: aliceblue;
+    background-color: rgb(249, 112, 112); 
 }
 .projects__title-01{
     font-size: 3rem;

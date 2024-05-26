@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.blog__container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1em 1em;
+}
+.blog__header {
+    width: 100%;
+    height: 8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 3em;
+}
+.blog__header-title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "noto sans";
+    width: 100%;
+    height: 100%;
+}
+.blog__title-01 {
+    font-size: 3rem;
+    color: antiquewhite; /* Color oscuro más tenue */
+    position: absolute;
+    z-index: 2; /* Coloca el título 1 por encima */
+    font-weight: 900;
+}
+
+.blog__title-02 {
+    font-size: 5.3rem;
+    font-weight: 1000;
+    color: rgb(225, 225, 225); /* Color negro */
+    position: absolute;
+    bottom: 0.2em;
+    z-index: 1; /* Coloca el título 2 por debajo */
+    opacity: 0.1; /* Opcional: hacer que el título 2 sea más tenue */
+}
+.blog__body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2.8em;
+    width: 100%;
+    height: auto;
+}
+.blog__card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: calc(33.33% - 2em); /* Tres tarjetas por fila con espacio entre ellas */
+    max-width: 22em;
+    min-width: 22em;
+    height: 28em;
+}
+
+.blog__card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.263);
+}
+
+.card-header {
+    border: solid 6px; 
+    border-color: rgba(255, 230, 0, 0.634);;
+    border-radius: 0.3em;
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    height: 35%;
+}
+
+.header__info-01 {
+    display: block;
+    background-image: url('/pexels-goumbik-669623.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.header__info-02 {
+    display: block;
+    background-image: url('/pexels-padrinan-2882652.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.header__info-03 {
+    display: block;
+    background-image: url('/pexels-pixabay-270637.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.card__body {
+    padding: 1.5em;
+}
+
+.card__particular {
+    margin-bottom: 1em;
+}
+
+.carr__particular-span {
+    font-size: 0.9em;
+    color: rgb(255, 230, 0);
+}
+
+.card__title h2 {
+    font-size: 1.4em;
+    margin: 0 0 0.5em 0;
+    color: #eceaea;
+}
+
+.card__textbite p {
+    font-size: 1em;
+    color: #878787;
+    line-height: 1.5;
+}

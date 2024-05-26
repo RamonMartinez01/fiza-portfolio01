@@ -122,3 +122,12 @@
     flex-direction: row;
     align-items: center;
 }
+
+/* --My Blog Section -- */
+.blog__section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

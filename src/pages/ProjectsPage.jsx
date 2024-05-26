@@ -1,6 +1,5 @@
 import './Styles/ProjectsPage.css'
 
-
 const ProjectsPage = () => {
   return (
     <article className="projects__container">
