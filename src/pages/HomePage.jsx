@@ -60,7 +60,9 @@ const HomePage = ({ refs }) => {
         </div>
       </div>
       <div ref={refs.contactRef} className="sections">
-        <ContactPage />
+        <div className="contact__section">
+          <ContactPage />
+        </div>
       </div>
     </section>
   )
