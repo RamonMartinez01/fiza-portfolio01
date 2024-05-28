@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+}
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+.APP {
+    margin: 0;
+   width: 100%;
+}
+.header__app{
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+.homePage__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 5em;
+}

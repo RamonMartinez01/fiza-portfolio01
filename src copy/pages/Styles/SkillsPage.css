@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.skills__container {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 3em;
+}
+.skills__header-title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5em;
+    font-family: "noto sans";
+    width: 100%;
+    height: 3.5em;
+}
+.skills__title-01{
+    font-size: 3rem;
+    color: antiquewhite; /* Color oscuro más tenue */
+    position: absolute;
+    z-index: 2; /* Coloca el título 1 por encima */
+    font-weight: 700;
+}
+.skills__title-02{
+    font-size: 5.3rem;
+    font-weight: 900;
+    color: rgb(225, 225, 225); /* Color negro */
+    position: absolute;
+    bottom: -0.8em;
+    z-index: 1; /* Coloca el título 2 por debajo */
+    opacity: 0.1; /* Opcional: hacer que el título 2 sea más tenue */
+}
+.skills__info-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height:25rem;
+    padding: 2em;
+  }
+  
+  .skills__info-left,
+  .skills__info-right {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  
+  .skills__unit-container,
+  .skills__unit {
+    margin-bottom: 1.5em;
+  }
+  
+  .skills__unit-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+  }
+  
+  .skills__unit-graphic {
+    width: 100%;
+    background-color: #f0f0f096;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .skills__graphic-100 {
+    display: block;
+    width: 100%;
+    height: 1.2em;
+  }
+  
+  .skills__graphic-particular {
+    display: block;
+    height: 100%;
+    background-color: rgb(219, 197, 0);
+    border-radius: 10px;
+    transition: width 0.5s ease;
+  }
+

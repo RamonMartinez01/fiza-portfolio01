@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.projects__container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1em 1em;
+}
+.projects__header {
+    width: 100%;
+    height: 8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 3em;
+}
+.projects__header-title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "noto sans";
+    width: 100%;
+    height: 100%;
+}
+.project__title-01 {
+    font-size: 3rem;
+    color: antiquewhite; 
+    position: absolute;
+    z-index: 2; 
+    font-weight: 900;
+}
+
+.projects__title-02 {
+    font-size: 5.3rem;
+    font-weight: 1000;
+    color: rgb(225, 225, 225); 
+    position: absolute;
+    bottom: 0.2em;
+    z-index: 1;
+    opacity: 0.1; 
+}
+.projects__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.projects__pakage {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 2em;
+    justify-content: space-evenly;
+}
+
+.projects__unit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.projects__unit:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.263);
+}
+
+.project__alfa {
+    width: 55%;
+}
+
+.project__beta {
+    width: 35%;
+}
+.project__alfa, .project__alfa {
+    height: 18em;
+    background-size: cover;
+}
+.projects__unit.unit__1{
+    background-image: url('/pexels-thisisengineering-3861969.jpg');
+    background-size: cover;
+}
+.projects__unit.unit__2{
+    background-image: url('/pexels-suzyhazelwood-3378260.jpg');
+    background-size: cover;
+}
+.projects__unit.unit__3{
+    background-image: url('/pexels-suzyhazelwood-2662198.jpg');
+    background-size: cover;
+}
+.projects__unit.unit__4{
+    background-image: url('/pexels-suzyhazelwood-3030823.jpg');
+    background-size: cover;
+    
+}
+.projects__unit.unit__5{
+    background-image: url('/pexels-thisisengineering-3862609.jpg');
+    background-size: cover;
+}
+.projects__unit.unit__6{
+    background-image: url('/pexels-suzyhazelwood-1913226.jpg');
+    background-size: cover;
+}
+
+
+.projects__content {
+    text-align: center;
+    padding: 1em;
+}
+
+
+.projects__unit h2 {
+    margin: 0;
+}
+
+/* Optional: add some padding or margin to h2 to position it better */
+.projects__content h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.projects__unit:hover { /* Slightly darker grey on hover */
+    transition: background-color 0.3s ease;
+}

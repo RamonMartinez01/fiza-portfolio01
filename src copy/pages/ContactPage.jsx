@@ -10,14 +10,14 @@ const ContactPage = () => {
         <span className="contact__title-01">Contact Me</span>
         <span className="contact__title-02">Contact</span>
       </div>
-      <form className="contact__form" /*onSubmit={handleSubmit}*/>
+      <form className="contact__form" onSubmit={handleSubmit}>
         <div className="form__group">
           <input
             type="text"
             name="name"
             className="form__input"
             placeholder="Name"
-            /*onChange={handleChange}*/
+            onChange={handleChange}
             required
           />
           <label className="form__label">Name</label>
@@ -28,7 +28,7 @@ const ContactPage = () => {
             name="email"
             className="form__input"
             placeholder="Email"
-            /*onChange={handleChange}*/
+            onChange={handleChange}
             required
           />
           <label className="form__label">Email</label>
@@ -38,13 +38,13 @@ const ContactPage = () => {
             name="message"
             className="form__textarea"
             placeholder="Message"
-            /*onChange={handleChange}*/
+            onChange={handleChange}
             required
           ></textarea>
-          <label className="form__label"></label>
+          <label className="form__label">Message</label>
         </div>
         <button type="submit" className="form__button">Send</button>
-        <p className="form__response">responseErrorMessage</p>
+        <p className="form__response">{responseMessage}</p>
       </form>
     </div>
   );
